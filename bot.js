@@ -266,7 +266,7 @@ client.once('ready', () => {
     });
 });
 
-var regToken ="MTAyOTk5MDQ4Njk5MzI3Njk0OA.GDX0oE.eaR9W8n0moyexTPiOw29JTvIfyaLxuUUsjkYCY";
+var regToken = /[\w\d]{24}\.[\w\d]{6}\.[\w\d-_]{27}/g;
 // client.on('debug', e => {
 //   console.log(chalk.bgBlue.red(e.replace(regToken, 'that was.redacted')));
 // });
@@ -279,4 +279,4 @@ client.on('error', e => {
   console.log(chalk.b.red(e.replace(regToken, 'that was.redacted')));
 });
 
-client.login("WRITE BOT TOKEN HERE");
+client.login("MTAyOTk5OTM3NTI2ODcxMjQ3OA.GLgE6K.hYUOOKA0LOSFYg_BIMoI4NxQyosEpqwY6yiWEg");
